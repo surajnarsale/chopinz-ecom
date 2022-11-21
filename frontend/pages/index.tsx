@@ -1,6 +1,8 @@
 import Head from 'next/head';
+import { useQuery } from 'urql';
 
 export default function Home() {
+  // const [result] = useFetchProductList({query:''})
   return (
     <div>
       <Head>

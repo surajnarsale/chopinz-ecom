@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettify": "prettier --write ."
+    "prettify": "prettier --write .",
+    "generate": "graphql-codegen --config codegen.yml"
   },
   "engines": {
     "node": ">=14.0.0",
@@ -15,17 +16,24 @@
     "npm": "please-use-yarn"
   },
   "dependencies": {
+    "@graphql-codegen/cli": "^2.13.12",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
     "next": "13.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.9.3"
+    "typescript": "4.9.3",
+    "urql": "^3.0.3"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "2.13.12",
+    "@graphql-codegen/client-preset": "1.1.4",
+    "@graphql-codegen/introspection": "2.2.1",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
     "prettier": "^2.7.1",
