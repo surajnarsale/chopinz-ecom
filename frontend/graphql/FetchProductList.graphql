@@ -1,0 +1,20 @@
+{
+  products {
+    data {
+      id
+      attributes {
+        title
+        description
+        price
+        slug
+        image {
+          data {
+            attributes {
+              formats
+            }
+          }
+        }
+      }
+    }
+  }
+}
